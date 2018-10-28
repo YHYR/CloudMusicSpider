@@ -52,11 +52,3 @@ class MysqlUtil:
         cur.execute(sql)
         conn.commit()
         cur.close()
-
-
-if __name__ == '__main__':
-    mysql = MysqlUtil('localhost', 'root', 'root', 'test', 3306)
-    result = mysql.query("select pass_word from demo", num='all')
-    import random
-    temp = random.choice(result)[0]
-    pass

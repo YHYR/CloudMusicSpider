@@ -15,8 +15,8 @@ from CloudMusicSpider.comment.constant import *
 from CloudMusicSpider.settings import *
 
 
-class ArtistSpider(RedisCrawlSpider):
-    name = "ArtistSpider"
+class HotArtistSpider(RedisCrawlSpider):
+    name = "HotArtistSpider"
     redis_key = KEY_REQUEST_START
 
     def __init__(self, *a, **kw):
